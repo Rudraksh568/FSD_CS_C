@@ -4,18 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>JS</title>
 </head>
 
+
 <body>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum aperiam facilis recusandae ipsam nemo aspernatur
-    neque modi facere. Cupiditate ullam quod voluptas et dolorum fugiat. Quaerat enim modi quo dolorem sed, a totam
-    quasi. Sunt dolores necessitatibus inventore accusamus voluptatibus suscipit distinctio eos cupiditate fugit libero,
-    pariatur nemo enim dolor aperiam soluta facilis eaque nobis id eveniet cumque. Consequuntur, iste. Ipsam odit quidem
-    sed eos assumenda reprehenderit porro aspernatur officia ad autem omnis accusamus rem quaerat nulla aliquid,
-    voluptatum dolorem ex earum quo dolore quia odio! Doloremque dolore cumque, in quidem, itaque consequatur
-    praesentium perspiciatis mollitia commodi fuga atque pariatur?
+
+    <script>
+        let div = document.createElement("div");
+        div.id = "parent";
+        div.style.backgroundColor = "lightblue";
+        div.style.width = "200px";
+        div.style.height = "200px";
+
+        let button = document.createElement("button");
+        button.innerText = "Change Text";
+        button.id = "btn";
+
+        para.innerText = "Hello World!";
+        para.id = "para";
+
+        div.appendChild(button);
+        div.appendChild(para);
+        document.body.appendChild(div);
+
+
+        document.getElementById("btn").onclick = function () {
+            document.getElementById("para").innerText = "Wow";
+        }
+        document.getElementById("btn").addEventListener("click", function () {
+            document.getElementById("para").innerText = "red";
+            document.getElementById("para").style.color = "red";
+        })
+
+    </script>
 </body>
 
-</html>wo background ki vjah se aa rha h
+</html>
